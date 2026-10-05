@@ -1,0 +1,174 @@
+:root {
+  color: #1c1917;
+  background: #f3efe6;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 40px;
+  letter-spacing: -0.03em;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #1f4e46;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead {
+  max-width: 62ch;
+  margin: 0 0 12px;
+  color: #44403c;
+}
+
+a {
+  color: #1f4e46;
+  font-weight: 650;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fffdf8;
+  border: 1px solid #e6dfd2;
+  border-radius: 16px;
+}
+
+.card h2 {
+  margin: 0 0 16px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 16px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #d6d0c4;
+  border-radius: 10px;
+  background: white;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: end;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #1f4e46;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #ece7dc;
+  color: #1c1917;
+}
+
+button.danger {
+  background: #9f2d2d;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-head span {
+  min-width: 28px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #ece7dc;
+  text-align: center;
+  font-weight: 700;
+}
+
+.error {
+  color: #9f2d2d;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee6d8;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  font-size: 13px;
+  color: #57534e;
+}
+
+tr.active {
+  background: #f4f7f4;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+}
